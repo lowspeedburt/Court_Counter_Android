@@ -5,11 +5,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:onClick="resetScore"
+        android:text="Reset" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
 
 
         <LinearLayout
@@ -67,6 +81,13 @@
                 android:layout_marginTop="8dp"
                 android:onClick="addOneForTeamA"
                 android:text="free throw" />
+
+            <Button
+                android:text="DecreaseA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="decreaseTeamA"
+                android:id="@+id/decreaseTeamA" />
         </LinearLayout>
 
         <View
@@ -132,22 +153,15 @@
                 android:layout_marginTop="8dp"
                 android:onClick="addOneForTeamB"
                 android:text="free throw" />
+            <Button
+                android:text="DecreaseB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/decreaseTeamB" />
         </LinearLayout>
 
 
     </LinearLayout>
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
-        android:onClick="resetScore"
-        android:text="Reset" />
 
 
 </RelativeLayout>
